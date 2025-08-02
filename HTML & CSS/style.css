@@ -1,0 +1,160 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f0f4f8 0%, #e0e7ef 100%);
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+header {
+    background: #2d3e50;
+    color: #fff;
+    padding: 2.5rem 0 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    position: relative;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.12);
+    margin-top: -60px;
+    background: #e0e7ef;
+}
+
+h1 {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 2.7rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #2d3e50;
+    margin-top: 2.5rem;
+    border-bottom: 2px solid #e0e7ef;
+    padding-bottom: 0.3rem;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    color: #3a4a5d;
+    margin-top: 1.5rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+main {
+    max-width: 800px;
+    margin: 2.5rem auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.09);
+    padding: 2.5rem 3rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+p {
+    line-height: 1.7;
+    margin: 1rem 0;
+    font-size: 1.08rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.project-card {
+    background: #f7fafd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+    padding: 1.2rem 1.5rem;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(44, 62, 80, 0.13);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 0.7rem;
+    color: #1a73e8;
+    font-weight: 600;
+}
+
+.project-card a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+button {
+    background: linear-gradient(90deg, #1a73e8 60%, #3a8dde 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(26, 115, 232, 0.08);
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0d47a1 60%, #1976d2 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 0.98rem;
+    padding: 1.5rem 0 0.7rem 0;
+    margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+    main {
+        padding: 1.2rem 0.5rem;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    main {
+        padding: 0.5rem 0.2rem;
+    }
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+        margin-top: -40px;
+    }
+}
